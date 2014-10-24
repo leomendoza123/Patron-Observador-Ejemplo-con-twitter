@@ -15,7 +15,8 @@ class ListaDeTweets extends Observable {
    
    public void agregaTweet(String Tweet) {
       // Agrega el nuevo Tweet a la lista
-      Tweets.add(Tweet); 
+      Tweets.add(Tweet);
+      System.out.println("\n"+ Tweets.size()+") _____________________________________________");
       System.out.println(Tweet);
       // Se hizo un cambio en la lista
       // Este se notifica a los observadores

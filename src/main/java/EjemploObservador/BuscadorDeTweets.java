@@ -60,7 +60,7 @@ public class BuscadorDeTweets extends Thread {
                 String Text = Tweet.getString("text");
                 String User = Tweet.getJSONObject("user").getString("name");
                 String location = Tweet.getJSONObject("user").getString("location");
-                String TweetText = "\n \n >>>>>>>> "+ location +"\n"+User+": "+Text+"\n"; 
+                String TweetText = ">>>>>>>> "+ location +"\n"+User+": "+Text+"\n"; 
                 
               /// Envia el TweetText al la Lista
                 ListaDeTweets.agregaTweet(TweetText);

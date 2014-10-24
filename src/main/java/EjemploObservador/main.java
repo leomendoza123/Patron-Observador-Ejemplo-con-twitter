@@ -4,7 +4,7 @@ package EjemploObservador;
 
 public static void main(String[] args) {
 
-       
+      //_____________Inicia Patron Observador_____________________________________
       // Crea el observado
       ListaDeTweets ListaDeTweets = new ListaDeTweets();
       
@@ -19,9 +19,9 @@ public static void main(String[] args) {
       ListaDeTweets.addObserver(AppCelular2);
       ListaDeTweets.addObserver(AppCelular3);
       
-      // Inicia el buscador de Tweets
+      //_____________Inicia el buscador de Tweets_______________________________________
       
-      BuscadorDeTweets BuscaTweets = new BuscadorDeTweets ("expodepoo",ListaDeTweets );
+      BuscadorDeTweets BuscaTweets = new BuscadorDeTweets ("evola",ListaDeTweets );
       BuscaTweets.start();
    }
  }
